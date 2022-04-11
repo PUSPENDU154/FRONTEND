@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FORMS</title>
+</head>
+
+<body>
+    <form action="www.backend.com/Puspendu/fromSaha" target="_blank">
+        <!-- target="_self" is the default value for the target it returns the same page  -->
+        <!-- here name=firstname writing is not necessary it is optional -->
+        <label for="firstname">FIRST NAME:</label>
+        <br>
+        <input type="text" name="firstanme" id="" value="Puspendu" autocomplete="on">
+        <!-- label for is used to recognize the input type and input type tag  is used for crearting some box or boxes by that we can write something inside it  -->
+        <br>
+        <br>
+        <label for="lastname">LAST NAME:</label>
+        <br>
+        <!-- here name=lastname writing is not necessary it is optional -->
+        <input type="text" name="lastname" id="" value="Saha" autocomplete="on">
+        <br>
+        <br>
+        <label for="email">EMAIL:</label>
+        <br>
+        <input type="email" name="email" id="" value="abc@xyz" autocomplete="on" required>
+        <!-- required means this optiion should be filled for submission -->
+        <br>
+        <input type="submit">
+        <input type="submit" value="next">
+
+    </form>
+    <br>
+    <br>
+    <form action="">
+        <input type="radio" id="html" name="fav_language" value="htmllang">
+        <label for="html">HTML</label>
+        <br>
+        <input type="radio" id="css" name="fav_language" value="csslang">
+        <label for="css">CSS</label>
+        <br>
+        <input type="radio" id="javascript" name="fav_language" value="javascriptlang">
+        <label for="javascript">JAVASCRIPT</label>
+        <!-- ID OR NAME CAN BE ANYTHING "ID" TAG OR "NAME" TAG SELECT AS PER THE CHOICE OF USER-->
+        <br>
+        <br>
+        <input type="radio" id="c" name="fav_language2">
+        <label for="c">C</label>
+        <br>
+        <input type="radio" id="cpp" name="fav_language2">
+        <label for="cpp">CPP</label>
+        <br>
+        <input type="radio" id="java" name="fav_language2">
+        <label for="java">JAVA</label>
+        <!-- "RADIO" BUTTON IS FOR SELECTION OF ONE AMONG MANY OPTIONS AND YOU HAVE TO PROVIDE ID WHICH WILL BE SAME AS LABLE FOR BUTTON AND YOU HAVE TO SELECT IT IN LABEL FOR BUTTON -->
+    </form>
+    <br>
+    <br>
+    <form action="">
+        <!-- checkbox is usually used for 0 or more option selecting -->
+        <input type="checkbox" id="vehicle1" value="bike" name="vehicle">
+        <label for="vehicle1">I HAVE A BIKE</label>
+        <br>
+        <input type="checkbox" id="vehicle2" value="car" name="vehicle">
+        <label for="vehicle2">I HAVE A CAR</label>
+        <br>
+        <input type="checkbox" id="vehicle3" value="having_boat" name="vehicle">
+        <label for="vehicle3">I HAVE A BOAT</label>
+        <!-- name attribute is used for grouping of such values or a perticular groups -->
+    </form>
+    <br>
+    <br>
+    <form action="/handle-data">
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars" size="1" multiple>
+            <!-- i can select multiple option by "multiple" attribute by selecting with "ctrl" (clicking along with ctrl key) bar -->
+            <option value="volvo">Volvo car</option>
+            <option value="fiat">Fiat car</option>
+            <option value="audi">Audi car</option>
+            <option value="bmw">BMW car</option>
+        </select>
+        <br>
+        <br>
+        <label for="essay">Essay</label>
+        <br>
+        <textarea name="essayText" id="essay" cols="30" rows="10"></textarea>
+        <!-- textarea or essay writing and rows and columns are boundary of it -->
+        <input type="submit">
+        <br>
+        <br>
+        <textarea name="essayText" id="essay" cols="30" rows="10"></textarea>
+        <button type="button">Clear Text Area</button>
+        <!-- button is used to do clear textarea -->
+        <input type="submit">
+    </form>
+</body>
+
+</html>
