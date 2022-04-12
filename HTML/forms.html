@@ -6,29 +6,85 @@
 </head>
 
 <body>
-    <form action="www.backend.com/Puspendu/fromSaha" target="_blank">
-        <!-- target="_self" is the default value for the target it returns the same page  -->
-        <!-- here name=firstname writing is not necessary it is optional -->
-        <label for="firstname">FIRST NAME:</label>
-        <br>
-        <input type="text" name="firstanme" id="" value="Puspendu" autocomplete="on">
-        <!-- label for is used to recognize the input type and input type tag  is used for crearting some box or boxes by that we can write something inside it  -->
-        <br>
-        <br>
-        <label for="lastname">LAST NAME:</label>
-        <br>
-        <!-- here name=lastname writing is not necessary it is optional -->
-        <input type="text" name="lastname" id="" value="Saha" autocomplete="on">
-        <br>
-        <br>
-        <label for="email">EMAIL:</label>
-        <br>
-        <input type="email" name="email" id="" value="abc@xyz" autocomplete="on" required>
-        <!-- required means this optiion should be filled for submission -->
-        <br>
+    <form action="www.backend.com/Puspendu/fromSaha" target="_blank" method="post">
+        <!-- method is used to hide any sensitive credentials o any user!! default is method="get" mean to show everything in address and another is method="post" is to hide the sensitive credentials of a user -->
+        <fieldset>
+            <legend>Personal Name And Others</legend>
+            <h1>Enter Name And other Credentials</h1>
+            <!-- target="_self" is the default value for the target it returns the same page  -->
+            <!-- here name=firstname writing is not necessary it is optional -->
+            <label for="firstname">FIRST NAME:</label>
+            <br>
+            <input type="text" name="firstanme" id="" value="Puspendu" autocomplete="on">
+            <!-- label for is used to recognize the input type and input type tag  is used for crearting some box or boxes by that we can write something inside it  -->
+            <br>
+            <label for="firstname">FIRST NAME:</label>
+            <br>
+            <input type="text" name="firstanme" id="" value="Puspendu" autocomplete="on" required readonly>
+            <!-- "readonly" used for you can't change the element but you can tag it  -->
+            <br>
+            <!-- this is specially for "placeholder" button -->
+            <label for="firstname">FIRST NAME:</label>
+            <br>
+            <input type="text" name="firstanme" id="" placeholder="Enter Your First Name" autocomplete="on">
+            <br>
+            <br>
+            <label for="lastname">LAST NAME:</label>
+            <br>
+            <!-- here name=lastname writing is not necessary it is optional -->
+            <input type="text" name="lastname" id="" value="Saha" autocomplete="on">
+            <br>
+            <label for="lastname">LAST NAME:</label>
+            <br>
+            <input type="text" name="lastname" id="" value="Saha" autocomplete="on" disabled>
+            <!-- "disabled" is used when i have to selsct permanantly some documents you can copy it but you can't change it -->
+            <br>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <label for="range">Range:</label>
+            <br>
+            <input type="range" min="1" max="50" value="10">
+        </fieldset>
+        <!-- <br>
+            <br> -->
+        <fieldset>
+            <legend>Email Details And Others</legend>
+            <h1>Enter Email And other Credentials</h1>
+            <label for="email">EMAIL:</label>
+            <br>
+            <input type="email" name="email" id="" value="abc@xyz" autocomplete="on" maxlength="15" required>
+            <!-- required means this optiion should be filled for submission -->
+            <!-- maxlength is used for fixing the length of given data -->
+            <br>
+            <label for="email">EMAIL:</label>
+            <br>
+            <input type="email" name="email" id="" placeholder="abc@xyz" autocomplete="on" size="50" required>
+            <!-- "size" is used for setting the width of required portion here size="50" -->
+            <br>
+            <label for="email">EMAIL:</label>
+            <br>
+            <input type="email" name="email" id="" placeholder="abc@xyz" autocomplete="on" size="50" hidden>
+            <!-- hidden is used to hide thw data given by instructor -->
+            <br>
+            <label for="age">Age:</label>
+            <br>
+            <input type="number" name="age" id="age" autocomplete="on">
+            <br>
+            <label for="Password">Password</label>
+            <br>
+            <input type="password" name="password" id="password">
+            <br>
+            <br>
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time">
+            <br>
+            <br>
+            <label for="datetime">Date And Time</label>
+            <input type="datetime-local" name="datetime" id="datetime">
+        </fieldset>
         <input type="submit">
         <input type="submit" value="next">
-
     </form>
     <br>
     <br>
@@ -81,17 +137,35 @@
         </select>
         <br>
         <br>
-        <label for="essay">Essay</label>
+        <label for="essay">Essay1</label>
         <br>
         <textarea name="essayText" id="essay" cols="30" rows="10"></textarea>
         <!-- textarea or essay writing and rows and columns are boundary of it -->
         <input type="submit">
         <br>
         <br>
+        <label for="essay">Essay2</label>
+        <br>
         <textarea name="essayText" id="essay" cols="30" rows="10"></textarea>
         <button type="button">Clear Text Area</button>
         <!-- button is used to do clear textarea -->
         <input type="submit">
+        <br>
+        <br>
+        <label for="essay">Essay3</label>
+        <br>
+        <textarea name="essayText" id="essay" cols="30" rows="10"></textarea>
+        <button type="submit">Clear Text Area</button>
+        <input type="submit">
+        <!-- when button type is submit then it will work the same as it is worked in submit button (line no 97 and 98) -->
+    </form>
+    <br>
+    <br>
+    <form action="">
+        <label for="country_code">Country Code:</label>
+        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z0-9]{3}" title="three letter country code">
+        <!-- [A-Za-z0-9]{3} type of the character and no of the character -->
+        <input type="submit" name="" id="">
     </form>
 </body>
 
