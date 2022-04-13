@@ -6,18 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* SIMPLE SELECTORS BASED ON
+        NAME/TAG,ID,CLASS */
         h1{
             /* Intrnal CSS */
             color:chocolate;
+            text-align: right;
+            /* text-align is for selecting the position */
         }
         h2{
             text-align: center;
         }
+        #colored{
+            /* ID SELECTOR - "#" it is the symbol of ID which is unique..you can't put same ID to more than one tag line no 31 */
+            /* color: blueviolet; */
+            text-align:end;
+        }
+        .center{
+            /* CLASS SELECTOR - . (dot) represents the CLASS which is not unique line 33 & 35 */
+             text-align: center;
+             color: cyan;
+        }
+        /* div{
+            background-color:aquamarine;
+        } */
+        div p{
+            /* DESCENDENT OPERATOR/SELECTOR : here first is host and next is under the host element line no 45-52 */
+            background-color:bisque;
+        }
+        .className p{
+            background-color: brown;
+        }
+        .childSelector>p{
+            /* CHILD SELECTOR */
+            background-color: green;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to HTML</h1>
+    <h1 id="colored">Welcome to HTML</h1>
     <h2>Hi</h2>
-    <h1>Back to HTML</h1>
+    <h1 class="center">Back to HTML</h1>
+    <h1>Hey There</h1>
+    <h1 class="center">hello</h1>
+    <section class="className">
+        <p>First para</p>
+        <p>Second para</p>
+    </section>
+    <div>
+        <p>
+            Hi,this is a para
+        </p>
+        <div>
+            <p>
+                nested para
+            </p>
+        </div>
+        <p>
+            Second Para
+        </p>
+    </div>
+    <p>This is 3rd para</p>
+    <div class="childSelector">
+        <p>Para</p>
+        <div>
+            <p>3rd para</p>
+        </div>
+        <p>Another Para</p>
+    </div>
 </body>
 </html>
+<!-- 
+ CSS Combinators - It explains the relationship between selectors
+ - Descendant Selector(space)
+ - Child selector(>)
+ - Adjacent Sibling(+)
+ - General Sibling(~)
+ -->

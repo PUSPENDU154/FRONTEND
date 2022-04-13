@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        /* internal CSS */
+        /* body{
+            background-color: blueviolet;
+        } */
+        *{
+            /* "*" means the whole 7/04/2022 time stamp 1:10:35 */
+            background-color: aquamarine;
+        }
+        div p{
+            background-color: bisque;
+        }
+        .className p{
+            background-color: brown;
+        }
+        .childSelector>p{
+            background-color: green;
+        }
+        /* div+p tag (ADJACENT SELECTOR): it is used for selecting the immidiate element of    </div> tag */
+        /* div+p{
+            
+            background-color: yellow;
+        }*/ 
+
+        /* div~p tag (GENERAL SELECTOR): it is used for selecting the all element after </div> tag */
+        div~p{
+            background-color: PINK;
+        }
+       
+        /* "a:all elements" are called as a Pseudo-classes */
+        a:link{
+            color:red;
+        }
+        a:visited{
+            color:green;
+        }
+        a:hover{
+            color:hotpink;
+        }
+        a:active{
+            color:aqua;
+        }
+        div:hover{
+            background-color:green
+        }
+        
+        /* "pseudo-element ::elements"
+           it is only used for BLOCK LEVEL ELEMENTS */
+        .psuedo-element::first-line{
+            color: red;
+            font-variant:small-caps;
+        }
+        .psuedo-element::first-letter{
+            color:blue;
+            font-size: xx-large;
+        }
+        .before-property::before{
+            content: url(image.jpg);
+        }
+        
+        /* .before-property::after{
+            content: url(image.jpg);
+        } */
+        ::marker{
+            /* it is used for specially a list marking  */
+            color: red;
+            font-size: large;
+        }
+        p::selection{
+            /* used for select a particular element april 7,59:00 as well as p::selection on 59:20 time stamp */
+            color: red;
+            background-color: yellow;
+        }
+        /* ATTRIBUTE SELECTOR - TIME STAMP(1:01:50) 7th April */
+        /* EXPLANATION: it is actually used for when the "target" attribute is present by that the people recognize it easily that it will open in the another tab .... example shown below*/
+        a[target]{
+            background-color: yellow;
+        }
+        input[type=text]{
+            width: 150px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: yellow;   
+        }
+        input[type=bottom]{
+            width: 150px;
+            margin-left: 35px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="colored">Welcome to HTML</h1>
+    <h2>Hi</h2>
+    <h1 class="center">Back to HTML</h1>
+    <h1>Hey There</h1>
+    <h1 class="center">hello</h1>
+    <section class="className">
+        <p>First para</p>
+        <p>Second para</p>
+    </section>
+    <p>Para Pre</p>
+    <div>
+        <p>Para 1</p>
+        <p>Para 2</p>
+    </div>
+    <p>para 3</p>
+    <p>para 4</p>
+    <br>
+    <br>
+    <a href="https://acciojob.com/">Acciojob Batch 12</a>
+    <!-- a:hover must come after a:link and a:visited in CSS definition -->
+    <!-- a:active must come after a:hover as per CSS rules -->
+    <a href="https://www.google.co.in/" target="_blank">Google</a>
+    <div>
+        dummy text-hover over me
+    </div>
+    <p class="psuedo-element">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi quod ab, nam nihil officia ratione, perspiciatis corrupti mollitia eligendi, itaque sint. Incidunt possimus voluptatem esse, quibusdam rem quidem fugit.l Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque at animi mollitia quaerat eum nulla deleniti excepturi expedita rem vero, tempore provident consectetur dolorum alias velit eos. Inventore, est! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium veniam, in optio maxime impedit quae ad esse reprehenderit, sed deserunt ipsa asperiores beatae, numquam iste! Numquam eligendi enim nihil cupiditate.
+    </p>
+    <br>
+    <h1 class="before-property">HEADING</h1>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+    <ol>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+    <label name="firstname" id="PUSPENDU">FIRSTNAME</select>
+    <input type="text" name="PUSPENDU" id="firstname" value="PUSPENDU">
+    <label name="lastname" id="SAHA">LASTNAME</select>
+    <input type="text" name="PUSPENDU" id="lastname" value="SAHA">
+    <input type="button" name="" id="" value="Example Button">
+    <!-- INLINE CSS -->
+    <h1 style="color: blue;text-align:center">Inline CSS Example</h1>
+    <p style="color: red">Para</p>
+</body>
+
+</html>
