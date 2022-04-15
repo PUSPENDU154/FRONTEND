@@ -1,0 +1,43 @@
+body{
+    background-color: lightgreen;
+}
+/* h1{
+    color: blue;
+}
+p{
+    font-size: large;
+    background-color: yellow;
+} */
+/* combining css "x,y{}" element time stamp - (1:26:10) date - 07/04/2022 */
+#id1,h1{
+    color: blue;
+    /* if the condition of two element is same then we can use this method  */
+}
+.class1,p/*if the property is same for 2 or more classes then we can use classname,class name for simplicity*/{
+    color:crimson;
+}
+.percentage{
+    font-size: 200%;
+    /* it has enhanced the size using its percentage 7th april (1:33:00) */
+}
+.word-spacing{
+    word-spacing:1in;
+}
+.em-style{
+    font-size:0.5cm;
+    letter-spacing: 2em;
+    /* here as font-size= 0.5cm then for 1em=0.5cm so 2em=1cm so it is relative to height */
+}
+.ex-style{
+    font-size: 0.5cm;
+    letter-spacing: 2ex;
+    /* it is relative to the height of the lowercase  */
+}
+.colour{
+    color: yellow;
+    color: rgb(0, 255, 0);
+    /* rgb(red,green,blue);
+    or rgb(red%,green%,blue%) */
+    color: #ffff00;
+    /* #RedGreenBlue or #RRGGBB */
+}

@@ -1,0 +1,12 @@
+/* p{
+    background-color: blue;
+} */
+
+h1.black{
+    color: black;
+    /* this is for calling a class by h1.black (.) dot operator */
+}
+.RGBA-EXHIBITION{
+    color: rgba(50/*RED*/, 28/*GREEN*/, 173/*BLUE*/, 0.596/*OPACITY*/);
+    /* here RGBA(red,green,blue,opacity(0 stands for "TRANSPARENT" and 1 stands for "OPEC")) OPEC MEANS VISIBLE WHICH IS DEFAULT AND TRANSPARENT MEANS INVISIBLE */
+}

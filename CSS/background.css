@@ -1,0 +1,24 @@
+.bg-coloring{
+    /* april 7th (1:57:10) */
+    background-color: yellow;
+}
+.bg-image{
+    background-image: url(bg-1.jpg);
+    background-repeat:repeat-y;
+    color: red;
+    /* height: 5000px;
+    width:auto; */
+    /* background image is imposing the image and background-repeat is for those to prevent the image repetation by  "background-repeat: no-repeat" */
+    background-position:right bottom;
+    background-attachment: fixed;
+      /* "background-attachment: fixed" by that the picture gets actually fixed 7th april (2:03:02)  */
+    
+
+    /* all along in one word 7th april (2:05:00) */
+   
+}
+table{
+    width: 1000px;
+    height: 1000px;
+    background: url(bg2.jpg) fixed repeat;
+}
