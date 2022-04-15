@@ -10,7 +10,7 @@
     width:auto; */
     /* background image is imposing the image and background-repeat is for those to prevent the image repetation by  "background-repeat: no-repeat" */
     background-position:right bottom;
-    background-attachment: fixed;
+    background-attachment:fixed;
       /* "background-attachment: fixed" by that the picture gets actually fixed 7th april (2:03:02)  */
     
 
