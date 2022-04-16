@@ -1,0 +1,22 @@
+.font-family{
+    font-family: 'Times New Roman', Times, serif;
+    /* in font family it is basically used for setting the font style of each and every selected elements*/
+    font-style: italic;
+}
+.font-var{
+    font-variant: small-caps;
+    /* (31:39) April 8th :: it is used when small letters have to change in small capital letter and caps letters are unchanged */
+}
+.font-weight{
+    font-weight:bolder;
+}
+.size{
+    font-size: 20px;;
+    /* liht,lighter,xx-large etc. also is able to give */
+}
+.random-text{
+        font-stretch:ultra-condensed;
+}
+.combined{
+    font: italic bolder xx-large small-caps georgia;
+}
