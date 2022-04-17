@@ -1,0 +1,21 @@
+.p1{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right:15px;
+    margin: 30px;
+    border-left-width:4px;
+    border-left-color: cyan;
+    /* actually padding creates space or gap between border and the content */
+}
+.p2{
+    border: 1px solid black;
+    margin: 30px;
+}
+.p3{
+    font: 18px "Times new Roman";
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    margin: 20px 5% 20px 10%;
+    padding: 20px 5% 20px 10%;
+}

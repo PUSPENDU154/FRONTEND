@@ -1,5 +1,11 @@
 .p1{
     margin: 15px;
-    width: 380px;
-    height:10px;
+}
+.p2{
+    margin: 50px 5%;
+    /* 8th april (1:26:20) 50px for top and bottom and 5% is for left and right margin*/
+}
+.p3{
+    margin: 10px 2% -10px auto;
+    /* top->right->bottom->left is one word staring from top going clockwise */
 }
