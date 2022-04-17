@@ -1,0 +1,28 @@
+p.example1{
+    border-width: 1px;
+    border-right-width:3px;
+    border-style: solid;
+    /* most useful border-style are: none,solid,dashed,dotted */
+    border-top-style: dashed;
+    border-bottom-style: dotted;
+    border-style: dotted;
+    border-top-color: green;
+    border-bottom-color: red;
+    border-left-color: blue;
+    border-right-color: chocolate;
+}
+.example2{
+    /* April 8th (1:10:08) */
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+}
+.example-span>span{
+    border-width: 1px;
+    border-style:solid;
+    border-color: blue;
+}
+.border-shorthand{
+    border:4px solid red;
+    border-bottom-color: blue;
+}

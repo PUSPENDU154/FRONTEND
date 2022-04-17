@@ -1,0 +1,10 @@
+.direction{
+    direction: rtl;
+    /* it means right to left */
+}
+.shift-text{
+    text-indent: 1in;
+    /* it is for while writting some letter we use a free space at first by this methodology we can acieve it  */
+    text-align: justify;
+    /* it becomes justified alignment 8th april (49:15) */
+}
