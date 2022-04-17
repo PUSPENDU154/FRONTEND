@@ -18,4 +18,36 @@
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     margin: 20px 5% 20px 10%;
     padding: 20px 5% 20px 10%;
+    /* as per margin TOP->RIGHT->BOTTOM->LEFT */
+    background-color: cadetblue;
+}
+.div-actual-width-understanding{
+    width: 320px;
+    padding:10px;
+    border: 5px solid goldenrod;
+    margin: 0;
+}
+.div1{
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+}
+.div2{
+    width: 300px;
+    height: 100px;
+    padding:50px;
+    border: 1px solid black;
+}
+.div3{
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.div4{
+    width: 300px;
+    height: 200px;
+    padding:50px;
+    border: 1px solid black;
+    box-sizing:border-box;
 }
