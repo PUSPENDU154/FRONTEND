@@ -12,3 +12,32 @@
     /* min and max width is on 9th april (1:08:10) */
     max-width:600px;
 }
+.scroll{
+    /* 9th april (1:13:10) */
+    display:block;
+    border: 1px solid red;
+    padding: 5px;
+    margin-top: 5em;
+    width: 500px;
+    /* max-width: 100px; */
+    height: 200px;
+    overflow: scroll;/*9th april (1:13:55)*/
+    /* overflow: scroll; means vertical and horizontal scroll bar  */
+}
+.auto{
+    /* 9th april (1:14:00) */
+    display:block;
+    border: 1px solid red;
+    padding: 5px;
+    margin-top: 5em;
+    width: 500px;
+    height: 200px;
+    overflow: auto;/*9th april (1:14:30)*/
+    /* overflow: auto; means vertical scroll bar */
+}
+.no-show{
+    /* 9th april (1:16:10) */
+    visibility:hidden;
+    display: none;
+    /* Difference between visibility:hidden and display:none is for visibility:hidden the captured space will not been eliminated i mean which space is needed for that para that will be remain unchanged though the writing is not visible but for "display:none" the space also will be eliminated of the invisible text [9th april (1:17:15 )] */
+}
