@@ -1,0 +1,14 @@
+.lh{
+    /* width: 400px; */
+    /* height: 100px; */
+    border: 1px solid red;
+    padding: 5px;
+    margin: 10px;
+    line-height: 30px;
+    max-height:100px;/*9th april (1:05:45)*/
+    /* overflow: hidden; */
+    min-height:60px ;/*9th april (1:07:15)*/
+    min-width:400px;
+    /* min and max width is on 9th april (1:08:10) */
+    max-width:600px;
+}

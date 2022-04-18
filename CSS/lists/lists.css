@@ -1,0 +1,16 @@
+.ul-1{
+    list-style-type: square;
+}
+.ul-2{
+    list-style-type: square;
+    list-style-position: inside;/*9th april (54:00)*/
+    list-style-image:url();/*9th april (55:40)*/
+    list-style: inside upper-roman;/*9th april (56:37)*/
+}
+.ol-1{
+    list-style-type: lower-greek;
+}
+button{
+    /* it is for shoeing hand sign instead of cursor */
+    cursor:pointer;/*9th april (59:10)*/
+}
