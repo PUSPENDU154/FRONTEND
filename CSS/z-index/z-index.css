@@ -1,0 +1,59 @@
+.div1{
+    height: 300px;
+    width: 400px;
+    background-color: springgreen;
+    position: relative;
+    bottom: -30px;
+    left:10px;
+    /* z-index: 1; */
+    /* opacity: 0.599; */
+}
+.div2{
+    height: 500px;
+    width: 350px;
+    background-color: pink;
+    position: relative;
+    top: -20px;
+    z-index: -1;/*11th april (36:00) */
+    left: 20px;
+}
+.scene{
+    /* 40:50 of 11th april */
+    margin: 5px;
+    background-color: #ccc;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    display: block;
+}
+.scene img{
+    display: block;
+}
+/* #ring{
+    [11th april (41:55)]
+    margin-top: -28px;
+} */
+.scene1 .ring{
+    /* for 11th april (42:44) */
+    margin-top: -28px;
+}
+.scene1 .duck{
+    position: relative;
+    /* For Z-Index
+- The latter(written after/later) elements in the HTML are displayed in front of the former ones.
+- Positioned elements appear in front of non-positioned ones. [9th April (44:20)])*/
+}
+.scene4 .kid{
+    position:relative;
+    top: 140px;
+    z-index: 2;
+}
+.scene4 .ring{
+    position: relative;
+    z-index: 1;
+    top:70px;
+}
+
+.scene4 .water{
+    position:relative;
+}
