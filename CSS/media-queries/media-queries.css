@@ -1,0 +1,42 @@
+.non-responsive {
+    width: 1000px;
+    background-color: blanchedalmond;
+}
+/* 11th april (1:02:04) below */
+
+@media screen and (max-width: 800px) {
+    .non-responsive {
+        width: 600px;
+        background-color: yellowgreen;
+    }
+}
+
+@media screen and (max-width:500px){
+    .non-responsive{
+        width: 50%;
+        background-color: blueviolet;
+        color: white;
+        padding: 20px;
+        text-decoration: underline;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+.topnav{
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a{
+     float:left;
+     display: block;
+     color: white;
+     text-align: center;
+     padding:14px 14px;
+     text-decoration: none;
+}
+@media screen and (max-width:715px) {
+    .topnav a{
+        width: 100%;
+    }
+}
