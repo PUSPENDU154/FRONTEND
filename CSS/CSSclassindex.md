@@ -32,3 +32,4 @@
 -<div class="clearfix">[1:34:15] in float-clear.html inside the float-clear folder.
 -ANIMAL-PHOTOS(1:42:15)
 -variables(Local and Global Variables)(1:58:30)
+N:B-> ANIMAL-PHOTOS HAVE BEEN DONE ABOUT ASSIGNMENT 
