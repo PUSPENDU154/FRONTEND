@@ -1,0 +1,25 @@
+/* Global is used for whole document ans Local is used only for that specific para */
+
+/* GLOBAL Variables 11th april (2:00:10) */
+:root{
+    --yellocolor:yellow;
+    --babu:white;
+}
+
+/* Local 11th april (1:59:00) shown below */
+p{
+    --redcolor:red;
+    --greencolor:green;
+    background-color: var(--redcolor);
+    color:var(--babu);
+}
+
+/* media screen in 11th april (2:03:10) */
+@media screen and (max-width:800px){
+    :root{
+        --babu:#123abc;
+    }
+    p{
+        --redcolor:grey;
+    }
+}
