@@ -64,3 +64,13 @@ div>div{
     width:33.33%;
     padding:50px
 }
+#myid{
+    background-color: blue;
+}
+.myclass{
+    background-color: gray;
+}
+p{
+    background-color: red !important;/*11th april (1:55:20) this "!important" gets priority all over the given css values*/
+    height: 30px;
+}
