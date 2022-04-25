@@ -1,14 +1,17 @@
- p>img{
+*{
+    box-sizing: border-box;
+}
+p>img{
     width: 200px;
     height: 200px;
     margin-left: 20px;
     float:right;
     margin-right: 20px;
 }
-p{
-    border:3px solid green;/*11th april (1:32:10)*/
+/* p{
+    border:3px solid green;[11th april (1:32:10)]
     padding: 20px;
-}
+} */
 p::after{
     content: "";
     clear:both;
@@ -55,3 +58,9 @@ div>div{
     border:3px solid red;
     clear: left;[11th april (1:28:55)]
 } */
+.box{
+    /* 11th april (1:36:08) */
+    float: left;
+    width:33.33%;
+    padding:50px
+}
