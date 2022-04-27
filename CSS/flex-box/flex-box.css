@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;/*12th april (28:30)*/
+}
+.flex-container{
+    /* 12th april (27:35) */
+    display:flex;
+    background-color:dodgerblue;
+}
+
+.flex-container>div{
+    /* 12th april (28:10) */
+    background-color:#f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;/*if i don't want all the length in column(flex-direction) then i have to do this 12th april (31:50)*/
+    text-align: center;
+}
+
+.container-1{
+    flex-direction: column;/*12th april (30:10)*/
+    /* flex-direction: row; // it is the dafault value of "flex-direction" */
+}
+
+.container-2{
+    flex-direction: column-reverse;
+}
+.container-3{
+    flex-direction: row;
+}
+.container-4{
+    flex-direction: row-reverse;
+}
+.container-5{
+    flex-wrap: wrap;/*12 th april(36:20)*/
+}
+.container-6{
+    flex-wrap: nowrap;
+}
+.container-7{
+    flex-wrap: wrap-reverse;
+}
+/* flex-wrap is also suitably applicable when the flex-direction: row; Rowwise */
+
+.new-flex-container{
+    background:seagreen;
+    margin-bottom: 30px;
+    display: flex;
+    /* flex-flow: column wrap-reverse; */
+    /* flex-flow: row-reverse wrap-reverse; */
+    flex-flow: row wrap-reverse;
+}
+
+.new-flex-container>div{
+    background-color:#f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+}
+
+.container-8{
+    justify-content:center ;/*(45:25) 12th april*/
+}
+.container-9{
+    justify-content:flex-start ;/*(46:25) 12th april*/
+}
+
+.container-10{
+    justify-content:flex-end;/*(46:30) 12th april*/
+}
+
+.container-11{
+    justify-content:space-around;/*(47:20),(47:33) 12th april*/
+    /* space-around; space-between;*/
+}
+.container-11>div{
+    margin-right: 50px;
+}
+
+.container-12{
+    height: 200px;
+    align-items:flex-start;/*flex-start; flex-end; stretch; baseline;*/
+    /* 12th april (53:20) */
+}
+.container-13{
+    height: 300px;
+    /* align-items: flex-end; */
+    align-items: center;
+    /* for BASELINE the elements will aligned in a same line i mean middle of the item conditions and align in the same horizontal line */
+    /* 12 th april (55:55) */
+}
+
+.container-14{
+    height: 600px;
+    flex-wrap: wrap;
+    align-content:space-between;
+    /* center; flex-end; flex-start; space-around; space-between; */
+    /* 12 th april (58:00) */
+}
+.container-15{
+    /* 12th april (1:00:40) */
+    height:300px;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-15>div{
+    height:100px;
+}

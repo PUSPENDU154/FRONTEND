@@ -1,0 +1,37 @@
+.main{
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.main-1 div{
+    flex-basis: 50px;
+}
+
+.main-1 div:nth-of-type(2){
+    /* 12th april (1:12:20) */
+    flex-basis: 100px;
+    /* pixels occur width wise in flex */
+}
+
+.main-2 div{
+    /* 12th april (1:14:00) */
+    flex-grow: 1;
+    /* equal space */
+}
+.main-2 div:nth-of-type(3){
+    flex-grow:3;
+    /* all is 1 but when it comes 3 then the ratiio becomes 3 */
+}
+
+.main-3 div{
+    flex-shrink:1;
+    /* 12th april (1:18:30) */
+    flex-basis: 100px;
+}
+.main-3 div:nth-of-type(3){
+    flex-shrink:3;
+}
+/* flex-grow is multiply(line21*line25) and flex-shrink is division   (line 30/line35) */

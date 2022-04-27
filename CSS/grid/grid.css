@@ -1,0 +1,73 @@
+.grid-container{
+    /* 12th april (1:30:00) */
+    padding: 10px;
+    background-color: #2196F3;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-columns: is used to break all elements into columns the no. of columns will be counted according to the no. of "auto" written here. if "auto" written 3 times then all elements will be broken into 3 columns[ grid-template-columns: auto auto auto;]*/
+    margin-bottom: 30px;
+}
+.grid-item{
+    /* 12th april (1:30:00) */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding:20px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.container-1{
+    column-gap: 20px;
+    row-gap: 20px;
+    gap:5px 100px;/*row-gap column-gap*/
+    grid-template-rows: auto auto auto;/*12th april (1:39:20)*/
+}
+
+.container-2{
+    gap: 10px;
+    grid-template-rows: auto auto auto 30px;
+}
+
+.container-2 div:nth-of-type(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* from grid-column-start: to before grid-column-end: (1:37:30) */
+}
+
+.container-2 div:nth-of-type(1){
+    grid-row-start: 1;
+    grid-row-end: 3; 
+    /* from grid-row-start: to before grid-row-end: (1:37:30)*/
+}
+
+.container-3{
+    grid-template-columns: 50px 50px 50px;
+    gap: 10px;
+    justify-content: center;/*column wise*/
+    /* (1:42:30) 11th april space-between; space-around; center; */
+}
+
+.container-4{
+    gap: 10px;
+    height: 400px;
+    align-content: space-between;/*row wise*/
+}
+.container-5{
+    gap: 10px;
+    grid-template-rows: auto auto auto auto;
+}
+/* .container-5 div:nth-of-type(4){
+    grid-column:1/span 4;/*start from(1)/before end(3)*/
+    /* 12th april (1:50:00) 
+}
+/* .container-5 div:nth-of-type(5){
+    grid-row:1/ span 4;
+}  */
+
+.container-5 div:nth-of-type(5){
+    /* grid-column: 2/span 2;
+    grid-row:1/span 2; */
+    grid-area: 1/2/span 2/span 2;/*12th april (1:52:25)
+    /* row-start/column-start/row-end/column-end */
+    /* doing span is more better than doing row/column->start/end */
+}

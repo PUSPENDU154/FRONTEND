@@ -1,0 +1,37 @@
+.item1{
+    grid-area: header;
+}
+.item2{
+    grid-area: menu;
+}
+.item3{
+    grid-area: main;
+}
+.item4{
+    grid-area: right;
+}
+.item5{
+    grid-area: footer;
+}
+.item6{
+    grid-area: khatam;
+}
+/* khatam is added on my own */
+.main{
+    display: grid;
+    gap: 10px;
+    background-color: seagreen;
+    padding: 10px;
+    grid-template-areas: 
+       'header header header header header header'
+       'menu main main main right right'
+       'menu footer footer footer footer footer'
+       'menu khatam khatam khatam khatam khatam';
+       /* the no of rows should be same */
+}
+.main>div{
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
