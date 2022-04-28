@@ -57,3 +57,12 @@ N:B-> ANIMAL-PHOTOS HAVE BEEN DONE ABOUT ASSIGNMENT
 -Grid(1:26:50)
   -gap(1:35:15),justify-content(1:42:30),space-between(1:42:30),align-content(1:46:50),grid-column(1:50:00),grid-area(1:52:25)
   -making a table using grid elements in 2nd grid files (1:55:30) formation(1:56:30)
+
+ 
+  
+  #########################################################################################################
+  IMPORTANT NOTICE:: UPTO "12TH APRIL" ALL WHICH ARE HAVE BEEN DONE IN CLASS ARE ONLY INDEXED THAT HAVE BEEN WRITTEN OR SHOWN UPPERSIDE OR ABOVE BUT FROM "13TH APRIL" THE DATE WILL BE SHOWN AS WELL AS THE INDEX WILL BE DONE ACCORDING TO THE FLOW OF THE CLASS.....................................................##########################################################################################################
+
+
+
+## 13th April:
