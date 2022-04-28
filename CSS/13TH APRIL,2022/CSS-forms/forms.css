@@ -6,6 +6,8 @@ input[type=text],select{
     border:1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: lightcoral;
+    color: blueviolet;
 }
 
 input[type=submit]{
@@ -28,4 +30,14 @@ form{
     border-radius: 5px;
     padding: 20px;
     background-color: #f2f2f2; 
+}
+textarea{
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 10px;
+    border:1px dashed cyan;
+    margin-top:20px;
+}
+textarea:hover{
+    background-color: beige;
 }
