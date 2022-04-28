@@ -28,7 +28,7 @@
 
 ## 09th April:
 - Table 9th april practice in "practice" Folder.
-  # (using border-radius; border-spacing; overflow:hidden;)
+   (using border-radius; border-spacing; overflow:hidden;)
 - HOW TO FIND FONT OF A STATEMENT (44:54) FROM GOOGLE WEBSITES AND ALL.
 - Lists(50:00)[about cursor and all stuffs]
 - positioning(1:22:55).static,relative,fixed and absolute.
