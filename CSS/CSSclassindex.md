@@ -61,7 +61,8 @@
  
   
   #########################################################################################################
-  IMPORTANT NOTICE:: UPTO "12TH APRIL" ALL WHICH ARE HAVE BEEN DONE IN CLASS ARE ONLY INDEXED THAT HAVE BEEN WRITTEN OR SHOWN UPPERSIDE OR ABOVE BUT FROM "13TH APRIL" THE DATE WILL BE SHOWN AS WELL AS THE INDEX WILL BE DONE ACCORDING TO THE FLOW OF THE CLASS.....................................................##########################################################################################################
+  ## IMPORTANT NOTICE:: UPTO "12TH APRIL" ALL WHICH ARE HAVE BEEN DONE IN CLASS ARE ONLY INDEXED THAT HAVE BEEN WRITTEN OR SHOWN UPPERSIDE OR ABOVE BUT FROM "13TH APRIL" THE DATE WILL BE SHOWN AS WELL AS THE INDEX WILL BE DONE ACCORDING TO THE FLOW OF THE CLASS.....................................................
+  ##########################################################################################################
 
 
 
