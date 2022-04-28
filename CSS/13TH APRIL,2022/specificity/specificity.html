@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- specificity starts from 13th april (16:25) -->
+    <title>Specificity</title>
+    <style>
+        .test{
+            color:blue
+        }
+        #demo{
+            color: yellow;
+        }
+        p{
+            color: red;
+        }
+        /* 
+        specificity canbe defined by "whose priority is before than whose" by that method in here the priority is :
+          Inline Styles > ID > Classes, pseudo-classes and attribute-selectors => .className,:hover,[ href ] >  Elements and pseudo-elements=> tags and :before..
+        */
+    </style>
+</head>
+<body>
+    <p class="test" id="demo" style="color: brown;">Hello World!</p>
+</body>
+</html>
