@@ -1,0 +1,31 @@
+div{
+   width: 150px;
+   height: 80px;
+   background-color: teal;
+   color: white;
+   padding: 10px;
+   text-align: center;
+  
+}
+
+.a{
+    transform: rotate(20deg);/*2d clockwise*/
+    /* transform: rotate(-20deg); -- 2d anti-clockwise */
+}
+
+.d{
+    /* transform: skewX(40deg); */
+    /* transform: skew(20deg,20deg);skew(X,Y) */
+    transform: skewY(20deg);
+}
+
+.c{
+    /* 13th April (1:45:20) */
+    /* transform: scaleX(2); 2times via length */
+    transform: scale(3,1)/*scale(X,Y)*/ translateX(50px)/*sliding towards Right*/ translateY(50px);/*sliding towards down*/
+}
+.e{
+    /* transform: matrix(scaleX,skewY,skewX,scaleY,translateX,translateY); */
+    transform: matrix(1,-0.3,0,1,0,0);
+}
+

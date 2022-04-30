@@ -67,3 +67,15 @@
 
 
 ## 13th April:
+- Specificity(16:25)(definition on class.md of 13th april)
+- Specificity calculation(24:16)
+- Important timings=>(27:00),(28:20),(47:10)
+- Equal Specificity(31:10) Latest one rules in this case
+- CSS Forms(37:30)
+- Practice-Problems(57:00)
+- Navbar(1:10:10)
+- Dropbox(1:26:40)
+- Transform(1:39:30)// rotate,scale,skew,translate are used(1:42:00)
+- Transform:matrix()//all in one(1:46:50)
+- Animations(1:49:10)
+- Box-Shadow(2:02:50)

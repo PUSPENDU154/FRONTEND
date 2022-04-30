@@ -1,0 +1,19 @@
+.example1{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 6px 2px darkgray, 10px 15px 8px 5px red;
+    /* first value is the HORIZONTAL OFFSET and second value is the VERTICAL OFFSET and the 3rd value adds some BLUR and the 4th value used for deciding how much box-shadow should be spread!! */
+}
+ 
+.example2{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 6px 2px darkgray inset, 10px 15px 8px 5px red inset;
+    /* inset (2:07:10) it is used for shadowing inside the box */
+}
+
+.example3{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 6px 2px darkgray inset, 10px 15px 8px 5px red;
+}

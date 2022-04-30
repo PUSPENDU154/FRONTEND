@@ -1,0 +1,76 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: examples;/*random names can be taken because it is an IDENTIFIER (like hare has been taken as "examples")*/
+    animation-duration: 5s;
+    position: relative;
+    animation-delay:2s;/*(1:56:15) take 2 seconds delay while starting*/
+    animation-iteration-count:3;/*or infinite *//*how much the animation play will occur (1:56:50)*/
+    animation-direction: alternate-reverse; 
+    /* reverse; alternate; alternate-reverse; */
+    animation-timing-function:ease-in-out; /* (1:59:00) */
+    /*linear;=> normal as DEFAULT 
+    ease;=>slow start then fast then end slowly 
+    ease-in;=>slow start then rest are all fast
+    ease-out; ease-in-out;
+    ease; and ease-in-out; are quiet same but ease; is a little bit faster than ease-in-out;
+    */
+    /* animation:examples 5s ease-in-out 2s infinite alternate-reverse; */
+}
+
+/* @keyframes identifier {
+    from {
+    
+    }
+    to{
+
+    }
+} *//*here identifier is "examples" stated below*/
+
+/* @keyframes examples {
+    from {
+        background-color: red;
+        height: 100px;
+    }
+    to{
+        background-color:yellow;
+        height: 150px;
+    }
+    
+} */
+
+/* NOW PERCENTAGE IN THE FORM OF TIME STATED BELOW (1:52:55) STATED BELOW*/
+@keyframes examples {
+    0%{
+        background-color: red;
+        left: 0;
+        top: 0;
+        height: 100px;
+    }
+    25%{
+        background-color: blue;
+        left: 200px;
+        top: 0;
+        height: 125px;
+    }
+    50%{
+        background-color: yellow;
+        left: 200px;
+        top: 200px;
+        height: 150px;
+    }
+    75%{
+        background-color: green;
+        left: 0;
+        top: 200px;
+        height: 125px;
+    }
+    100%{
+        background-color: red;
+        left: 0;
+        top: 0;
+        height: 100px;
+    }
+        
+}
