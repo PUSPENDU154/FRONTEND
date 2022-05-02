@@ -79,3 +79,11 @@
 - Transform:matrix()//all in one(1:46:50)
 - Animations(1:49:10)
 - Box-Shadow(2:02:50)
+
+## 14th April:
+- Quick Revision of HTML AND CSS (30:20)
+<!-- root is a Global Variable (:root) -->
+- Quiz regarding HTML AND CSS
+- Finding Icon (1:54:40) [IMPORTANT]
+<!-- Finding icon by typing in google "font awesome cdn" then https://cdnjs.com/libraries/font-awesome  or "fontawesome.com(2:04:35)" -->
+- opening Mailbox(2:10:10)
