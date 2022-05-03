@@ -8,16 +8,16 @@ p>img{
     float:right;
     margin-right: 20px;
 }
-/* p{
-    border:3px solid green;[11th april (1:32:10)]
+p{
+    border:3px solid green;/*[11th april (1:32:10)]*/
     padding: 20px;
-} */
+}
 p::after{
     content: "";
     clear:both;
     display: table;
 }
-/*
+/* 
 .div1{
     background: red;
 }
@@ -37,13 +37,14 @@ div>div{
 } */
 
 /* 11 th april(1:26:45) below */
-/* .div1{
+.div1{
     float:left;
     padding: 10px;
     border:3px solid #73AD21;
 }
 .div2{
     clear:left;
+    /* float: left; */
     padding: 10px;
     border:3px solid red;
 }
@@ -56,8 +57,8 @@ div>div{
 .div4{
     padding: 10px;
     border:3px solid red;
-    clear: left;[11th april (1:28:55)]
-} */
+    clear: left;/*[11th april (1:28:55)]*/
+}
 .box{
     /* 11th april (1:36:08) */
     float: left;
@@ -72,5 +73,5 @@ div>div{
 }
 p{
     background-color: red !important;/*11th april (1:55:20) this "!important" gets priority all over the given css values*/
-    height: 30px;
+    height: 100%;
 }
