@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Starts from (37:35) -->
+    <title>String</title>
+</head>
+<body>
+    
+
+    <script>
+        const answer1="First String"
+        const answer2="Second String"
+        let len1=answer1.length //(39:10) can't do "answer1.length()" like java only have to do "answer1.length" as it is not the function like java it's just like the property in "javascript"///
+        let len2=answer2.length
+        console.log(len1)
+        console.log(len2)
+
+        let text="we are the \"students\" of Acciojob \\batch 12"
+        // for giving QUOTE OR DOUBLE INVERTED COMMA inside a string (39:50) and for giving BACKSHLASH inside a string (40:55) in js 
+        console.log(text)
+        let my='dummy'
+        console.log(my)
+        my='hey\'dummy\''
+        console.log(my)
+        // Escape character
+        // if I want to have a '' or "" or \ in my string, I should escape it by using \
+        // i.e. use \'string\' instead of 'string', use \"string\" instead of "string"
+        // use 1\\2 instead of 1\2
+        
+        // Difference between line no. ("31"to"32") and ("33" to "34") (45:00)depicted below
+        let x="john"
+        console.log(typeof(x))
+        let y=new String("john")
+        console.log(typeof(y)) 
+        // (50:30)   
+        const obj1 = { a:"1",b:5}
+        const obj2 = obj1
+        obj1===obj2 //true, pointing to the same object
+        const obj3 = { a:"1",b:5}
+        obj1===obj3 // false, pointing to same looking object
+    </script>
+</body>
+</html>
