@@ -38,6 +38,35 @@
         obj1===obj2 //true, pointing to the same object
         const obj3 = { a:"1",b:5}
         obj1===obj3 // false, pointing to same looking object
+        // string.slice method of String (53:50)
+        let str='Rohan, Banana, Dutt'
+        console.log("(FOR POSITIVE VALUE:)")
+        let part=str.slice(7,13)
+        console.log(part)
+        console.log("(FOR NEGATIVE VALUE:)")
+        let Part=str.slice(-12,-6)// starts from -1 from last(58:10)
+        console.log(Part)// ans will be banana 
+        console.log("(FOR POSITIVE VALUE SINGLE VALE :)")
+        Part=str.slice(7)
+        console.log(Part)
+        console.log("(FOR NEGATIVE VALUE SINGLE VALE :)")
+        Part=str.slice(-12)
+        console.log(Part)
+        console.log("(SUBSTRING METHOD:)")
+        let pArt=str.substring(7,13)//starts from (1:03:10)
+        console.log(pArt)
+        console.log("(SUBSTRING SINGLE VALUE:)")
+        pArt=str.substring(7)
+        console.log(pArt)
+        // SUBSTRING DOES NOT TAKE THE NEGATIVE VALUES THAT'S WHY IF NEGATIVE VALUE IS GIVEN THEN IT HAS BEEN SHOWN "INVALID"
+        console.log("(SUBSTR METHOD)")
+        let parT=str.substr(7,6)// (1:05:45)
+        // str.substr(index number, length from that index)
+        console.log(parT)
+        parT=str.substr(7)
+        console.log(parT)
+        parT=str.substr(-4)
+        console.log(parT)
     </script>
 </body>
 </html>
