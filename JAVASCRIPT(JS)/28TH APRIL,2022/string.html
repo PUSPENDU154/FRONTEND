@@ -67,6 +67,33 @@
         console.log(parT)
         parT=str.substr(-4)
         console.log(parT)
+        console.log("(STRING METHOD: replace)")
+        repText="please be here"
+        newText=repText.replace("here","in delhi")//(1:23:55)
+        console.log(newText)
+        let repText2="please be here here"
+        let newText2=repText2.replace("here","in delhi")//(1:24:40) First Occurence
+        console.log(newText2)// OUTPUT: please be in delhi here
+        let repText3="please be here here"//for all occurences(1:26:40)
+        let newText3=repText3.replace(/here/g,"in delhi")
+        console.log(newText3)
+        let repText3A="please be here HERE"//for all occurences(1:26:40)
+        let newText3A=repText3A.replace(/here/g,"in delhi")
+        console.log(newText3A)
+        let repText3B="please be HerE HERE"//for all occurences(1:26:40)
+        let newText3B=repText3B.replace(/here/i,"in delhi")
+        console.log(newText3B)
+        let repText4="please be here HERE HeRe"
+        let newText4=repText4.replace(/here/gi,"in delhi")// for all occurences irrespective of all uppercase and lowercases(1:27:10)
+        console.log(newText4)
+        /*SO IN CONCLUSION:(1:29:35)
+        => g means all occurrence
+        => i means one occurrence but case insensitive
+        gi=> all occurrence and case insensitive
+        */
+        text1="what's up"
+        console.log(text1.concat("","hey"," euiqwhd","   "," qdhdd"))
+        // str.concat("string1","string2",......)(1:32:50) joining strings
     </script>
 </body>
 </html>
