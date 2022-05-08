@@ -5,7 +5,7 @@
     <title>String</title>
 </head>
 <body>
-    
+    <div id="div1"></div>
 
     <script>
         const answer1="First String"
@@ -80,20 +80,81 @@
         let repText3A="please be here HERE"//for all occurences(1:26:40)
         let newText3A=repText3A.replace(/here/g,"in delhi")
         console.log(newText3A)
-        let repText3B="please be HerE HERE"//for all occurences(1:26:40)
+        let repText3B="please be HerE HERE"//for first occurences case insensitive(1:26:40)
         let newText3B=repText3B.replace(/here/i,"in delhi")
         console.log(newText3B)
         let repText4="please be here HERE HeRe"
-        let newText4=repText4.replace(/here/gi,"in delhi")// for all occurences irrespective of all uppercase and lowercases(1:27:10)
+        let newText4=repText4.replace(/here/gi,"in delhi")// for all occurences irrespective of all with case insensitive uppercase and lowercases(1:27:10)
         console.log(newText4)
         /*SO IN CONCLUSION:(1:29:35)
         => g means all occurrence
         => i means one occurrence but case insensitive
         gi=> all occurrence and case insensitive
         */
-        text1="what's up"
+        let text1="what's up"
         console.log(text1.concat("","hey"," euiqwhd","   "," qdhdd"))
         // str.concat("string1","string2",......)(1:32:50) joining strings
+        let text2="                       Puspendu                    "
+        let m=text2.trim()
+        console.log(m)
+        // trim() method is removing white space of left or right of the entire string not between those strings(1:35:30)
+        console.log(text2.trimLeft())
+        console.log(text2.trimRight())
+        let PaddedToBe="5"
+        console.log(PaddedToBe.padStart(4,"x"),PaddedToBe.padEnd(4,"x"))// padstart,padend (1:36:20)
+        let charat="My Name Is Puspendu Saha"
+        console.log(charat.charAt(4))
+        // split(1:38:20) 
+        let statementString="my name is Puspendu Saha"
+        let nameArr= statementString.split(" ")//separated by only spaces i.e. words
+        console.log(nameArr)
+        let charArr= statementString.split("")// separetes every character
+        console.log(charArr)
+        let wholeArr= statementString.split()//converts arrray the whole statement
+        console.log(wholeArr)
+
+        // Template Literals (1:56:00) " ` " this sign under double inverted comma
+        let tempLiterals1=`i am "Puspendu" saha'`
+        let templatLiterals=`i read in "skfgi" 'template' college'`
+        console.log(templatLiterals)
+        let templateLiterals=`"i am btech students"
+        wejhberhbr
+        good
+        
+        
+        boy`
+        console.log(templateLiterals)
+        
+        // (1:57:55)
+        const myFirstName="Puspendu"
+        const myLastName="Saha"
+        // normally we do
+        console.log("My full name is: "+myFirstName+" "+myLastName)
+        // Variable Substitution (1:59:05) inside Template Literals
+        console.log("By Variable Substitution:")
+        console.log(`My full name is: ${myFirstName} ${myLastName}`)
+
+        // set decimal number after point we have to put ".toFixed(no. of digit after point)" (2:00:30)
+        let price=10
+        let VAT=0.25
+        let total=`Total: ${(price*(1+VAT)).toFixed(2)}`//(2:00:10)
+        let total1=`Total: ${(price*(1+VAT)).toFixed()}`//for ".toFixed()" i mean there has no digit then the value will round it off
+        console.log(total,total1)
+
+        // (2:02:20)
+        let heading="This is a Heading"
+        let content="This is a Content"
+        document.getElementById("div1").innerHTML=`<h2 style="text-decoration:underline;color:red;background-color:grey;">${heading}</h2>
+        <h2>${content}</h2>`
+        
+        // Number Methods (2:05:10)
+        let array=["p","u","s","p","e","n","d","u"]
+        console.log(array.toString())
+        console.log(".toPrecision() method:"+23.4567.toPrecision(3))
+        console.log(".toFixed() method:"+23.4567.toFixed(3))
+        console.log("Number() method:"+Number(23.4567))
+        console.log("parseInt() method:"+parseInt(23.4567))
+        console.log("parseFloat() method:"+parseFloat(23.4567))
     </script>
 </body>
 </html>
