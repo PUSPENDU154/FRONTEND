@@ -56,18 +56,18 @@
     gap: 10px;
     grid-template-rows: auto auto auto auto;
 }
-/* .container-5 div:nth-of-type(4){
-    grid-column:1/span 4;/*start from(1)/before end(3)*/
-    /* 12th april (1:50:00) 
-}
+/* .container-5 div:nth-of-type(4){ */
+   /* grid-column:1/span 4;*//*start from(1)/before end(5)*/
+    /* 12th april (1:50:00) */
+/* } */
 /* .container-5 div:nth-of-type(5){
     grid-row:1/ span 4;
 }  */
 
 .container-5 div:nth-of-type(5){
-    /* grid-column: 2/span 2;
-    grid-row:1/span 2; */
-    grid-area: 1/2/span 2/span 2;/*12th april (1:52:25)
+    /* grid-column: 2/span 2; */
+    /* grid-row:1/span 2;  */
+   grid-area: 1/2/span 2/span 2;/*12th april (1:52:25)*/
     /* row-start/column-start/row-end/column-end */
     /* doing span is more better than doing row/column->start/end */
 }
