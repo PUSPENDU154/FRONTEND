@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Starts from (18:15) -->
+    <title>Array</title>
+</head>
+<body>
+    <p id="show"></p>
+
+
+    <script>
+        const cars=["Mahindra","Volvo","BMW"]
+        const cars1=[]
+        cars1[0]="Mahindra"
+        cars1[1]="Volvo"
+        cars1[2]="BWS"
+
+        let car=cars[0]
+
+        document.getElementById("show").innerHTML= cars // (20:35)
+        console.log(cars.length)
+        console.log(typeof(cars)) // objext (typeof of array is "object")(21:55)
+        
+        const weirdArr = [
+                "Mahindra",
+                24,
+                true,
+                { firstName: "Puspendu", age: 22 },
+                ["A", "B", 26],
+            ];
+            console.log(weirdArr);
+            console.log(weirdArr.length);
+
+
+        // FOR LOOPS (27:00)
+        const Cars=["Mahindra","Volvo","BMW"]
+        let text="";
+        for(let i=0;i<Cars.length;i++){
+            // in this for loop i can't give "const i=0" as the value will bw randomly changed(28:05)
+            text+=cars[i]+"<br>"
+        }
+        console.log(text)
+        document.getElementById("show").innerHTML=text
+        
+        // FOR-IN LOOP (28:40)
+        const person={
+            firstName: "Puspendu",
+            lastName: "Saha",
+            age: 22,
+        }
+        for(let x in person){
+            console.log(x)// output will be only keys
+            console.log(x,person[x])// output: (key,value)
+        }
+
+        // FOR-EACH LOOP (33:00)
+        const number=[45,4,9,16,25]
+        let txt="",Txt="";
+        number.forEach(myfunc)
+
+        function myfunc(value,index,array){
+            txt+=value+" "+index+","
+            Txt+=array+" "   
+        }
+        console.log(txt)
+        console.log(Txt)
+       
+       
+        const number1=[45,4,9,16,25]
+        let txt1=""
+        number1.forEach(myfunc1)
+
+        function myfunc1(value,index,array){
+            if(index>0){
+                const newVal=value+array[index-1]//taking the value of an array of the prev number
+                txt1+=newVal+" "
+            }else if(index===0){
+                txt1=value+" "
+            }
+        }
+        console.log(txt1)
+    </script>
+</body>
+</html>
