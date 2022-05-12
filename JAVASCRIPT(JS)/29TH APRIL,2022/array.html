@@ -6,6 +6,7 @@
 </head>
 <body>
     <p id="show"></p>
+    <p id="Show"></p>
 
 
     <script>
@@ -79,6 +80,134 @@
             }
         }
         console.log(txt1)
+
+        const multiple=[19,38,57,76]
+        let tableText=""
+        multiple.forEach(myFunc)
+        function myFunc(value,index){
+            tableText+=`19 × ${(index+1)}=${multiple[index]}<br> `
+            // document.getElementById("Show").innerHTML=tableText
+        }
+        console.log(tableText)
+        document.getElementById("Show").innerHTML=tableText
+
+        let List=["Banana","Kiwi","Orange","Guava","Watermelon"]
+        console.log(List.toString())
+        console.log(List.join("@"))//(1:23:10)
+        console.log(List.pop())//(1:23:40) last element of an array i.e. Watermelon
+        // console.log(List.fill("myself"))// fill all the elements as "myself"
+        console.log(List.shift())//(1:24:50) delete the first element
+        console.log(List)
+        console.log(List.unshift("Apple"))// output returns the new length that is 4 
+        console.log(List)// unshift add element at first(1:25:20)
+        console.log(List.push("Lichi"))// returns the new length of array that is 5 and push add element at last 
+        console.log(List)
+        delete List[2]
+        console.log(List)// now after delete List[2] the position of index 2 will be put as "empty"
+        
+        // IMPORTANT METHOD: SPLICING NAD SLICING (1:31:20)
+        // splicing()(1:32:10)
+        let arraySpl=["Rohan","Rani","Ram","Devi","Sonai","Babu"]
+        console.log(arraySpl)
+        arraySpl.splice(1,0,"bhabani","bani","nisha")
+        // splice(start: number, deleteCount?: number): string[]
+        console.log(arraySpl)
+        arraySpl.splice(1,1)
+        console.log(arraySpl)
+        arraySpl.splice(2,2,"Kishor","Arjun")
+        console.log(arraySpl)
+        // from negative value splice()
+        arraySpl.splice(-2,0,"Neha","Karina")
+        console.log(arraySpl)
+        arraySpl.splice(-2,2,"Shahrukh","Aditi")
+        console.log(arraySpl)
+
+        // slice()(1:35:35) 
+        console.log(arraySpl.slice(1,3))
+        // index 1 to before index 3 i.e. upto index 2
+        console.log(arraySpl.slice(1,2))
+        console.log(arraySpl.slice(-3,-1))
+        //  sorting(1:43:25)
+        let arraySort=["dabbar","Dabbar","apple","Banana","Apple"]
+        console.log(arraySort.sort())
+        let arraySort1=["Apple","aPple","appLe","applE","apPle","apple"]
+        console.log(arraySort1.sort())
+        let arraySort2=["Apple","Banana","Orange","Watermelon"]
+        console.log(arraySort2.sort())
+        let arraySort3=[1,25,10,11,13,112,100,560,4060]
+        // because this sort() checkes lexicographical way (1:46:15)
+        console.log(arraySort3.sort())
+        
+        // Reverse
+        let arrayReverse=["Orange","Banana","Apple","Cabbage"]
+        console.log(arrayReverse.reverse())
+        // it reverse the character of array like output:  ['Cabbage', 'Apple', 'Banana', 'Orange']
+
+    // via function Sorting(1:48:00)
+        console.log(arraySort3.sort(function(a,b){//1st Process
+            // It is for ascending order of a number
+            return a-b
+        }))
+        // 2nd Process
+        console.log(arraySort3.sort(mySortFunc))
+        function mySortFunc(a,b){
+            // It is for descending order of a number
+            return b-a
+        }
+
+        // (1:57:40) min and max 
+        function arrMax(arr){
+            return Math.max.apply(null,arr)
+        }
+        console.log(arrMax(arraySort3))
+        function arrMin(arr){
+            return Math.min.apply(null,arr)
+        }
+        console.log(arrMin(arraySort3))
+        
+        // Sort the array of Object (1:59:30)
+        let arrayOfObject=[
+            {
+                type: "Volvo",
+                year: 2017,
+            },
+            {
+                type: "Audi",
+                year: 2010,
+            },
+            {
+                type: "Tesla",
+                year: 2022,
+            }
+        ]
+        
+        // const varArr=arrayOfObject.sort(objFunc)
+        // function objFunc(a,b){
+        //     return a.year-b.year
+        // }
+        // console.log(varArr)
+        
+        console.log(arrayOfObject.sort(function(a,b){
+            return a.year-b.year
+        }))
+        
+        console.log("map() method in array:")
+        // FUNCTION map()(2:03:30)
+        arrMapPrev=[45,4,9,16,25]
+        console.log(arrMapPrev)
+        console.log(arrMapPrev.map(mapFunc))
+        function mapFunc(value,index,array){
+            // return value>19 returns boolean value
+            return value*2
+        }
+        
+        // filter() (2:05:40)
+        console.log("filter() method in array:")
+       console.log( arrMapPrev.filter(over18))// important line for filter
+        function over18(value,index,array){
+            return value>18
+        }
+    
     </script>
 </body>
 </html>
