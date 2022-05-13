@@ -4,23 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>string Continuation</title>
 </head>
 <body>
     <script>
         function splits(array){
             let odd=[],even=[]
-            array.forEach(function(value,index){
+            // 1ST APPROACH
+            // array.forEach(function(value,index){
+            //     if(index%2){
+            //         odd.push(value)
+            //     }else{
+            //         even.push(value)
+            //     }
+            // })
+            // console.log(odd,even)
+
+            // 2ND APPROACH
+            array.forEach(splitArray)
+            function splitArray(value,index){
                 if(index%2){
                     odd.push(value)
                 }else{
                     even.push(value)
                 }
-            })
+            }
+            // splitArray(4,2)
             console.log(odd,even)
         }
         let arrX=[2,4,5,"rd",7]
         splits(arrX)
+
+        // reduce in array(37:35)
+        const number=[45,4,9,16,25]
+        let sum=number.reduce(myFunc)
+        function myFunc(total,value,index,array){
+            return total+value
+        }
+        console.log(sum)
+        document.write(sum)
+
+        // every() method(48:40)
+        const numberEvery=[45,65,2,3,19]
+        console.log(numberEvery.every(everyFunc))
+        function everyFunc(value,index,array){
+            return value>18 
+        }
+        
+        // some() method (49:30)
+        console.log(numberEvery.some(function(value,index,array){
+            return value>18 
+        }))
+        
+        // (49:50) is indexOf()
+        const arrayIndOf=["Apple","Orange","Banana","Chilli","Watermelon"]
+        console.log(arrayIndOf.indexOf("Banana"))
+        const arrayIndOf1=["Apple","Orange","Banana","Apple","Watermelon"]
+        console.log(arrayIndOf1.indexOf("Apple"))// first one will be taken(52:25)
+        console.log(arrayIndOf1.lastIndexOf("Apple"))//Last one will be printed
+        console.log(arrayIndOf1.indexOf("Kiwi"))
+        // all in one
+        console.log(arrayIndOf.indexOf("Banana"),arrayIndOf1.indexOf("Apple"),arrayIndOf1.lastIndexOf("Apple"),arrayIndOf1.indexOf("Kiwi"))
+
+        console.log(arrayIndOf.find(function(value,array,index){
+            return value.length>5
+        }))//find() method (54:20)
+
+        // includes() method(55:40)
+        console.log(arrayIndOf.includes("Mango"))//false
+        console.log(arrayIndOf.includes("Watermelon"))//true
+
     </script>
 </body>
 </html>
