@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- starts from (1:27:40) -->
+    <title>Arrow Function or Syntax</title>
+</head>
+<body>
+    <script>
+        function mul(a,b){
+        return a*b
+    }
+    console.log("By Normal Function: "+mul(5,6))
+
+    // By Arrow Function
+    const mul1=(a,b) => {
+        return a*b
+    }
+    
+    const mul2=(a,b) => a*b
+    const mul3=(a,b) => (a*b)
+    console.log("By different Styles of Arrow Function: "+ mul1(5,6),mul2(5,6),mul3(5,6))
+
+    function hello(){
+        return "hello world"
+    }
+    console.log("By Normal Function: "+hello())
+    // by Arrow Function
+    const hello1= () => "Hello World"
+    console.log("By Arrow Function: "+hello1())
+    
+ // using Argument(1:30:50)
+    function helloVar(val){
+        return "hello world "+val
+    }
+    console.log("By Normal Function: "+helloVar("Rohan"))
+   
+    // by Arrow Function
+    const hello1Var= (val) => "Hello World "+val
+    console.log("By Arrow Function: "+hello1Var("Rohan"))
+
+    // For No-Returning Arrow Functions(1:31:30)
+    function returnNot(a,b){
+        console.log("By Normal Function: "+(a+b))
+    }
+    returnNot(4,4)
+    
+    //  by Arrow Function
+    const notReturn=(a,b) => {
+        console.log("By Arrow Function: "+(a+b))
+    }
+    // you have to use this curly braces if you need not to return anything in your given function
+    notReturn(4,4)
+
+    </script>
+</body>
+</html>
