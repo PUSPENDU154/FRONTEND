@@ -1,0 +1,14 @@
+{
+    "firstName":"Puspendu",
+    "lastName": "Saha",
+    "age": 22,
+    "address": {
+        "street": "Dulepara Main Road",
+        "locality": "Sahebbagan",
+        "city":"Chandannagar",
+        "state":"West Bengal"
+    },
+    "phone": [
+        9876543210,7894561230
+    ]
+}

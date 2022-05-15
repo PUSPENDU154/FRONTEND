@@ -1,3 +1,6 @@
+// const obj=require("./jsonObject.json")
+// console.log(obj)
+
 console.log(Math.random())
 // returns a value no between {0,1}
 console.log(Math.floor(Math.random()*10))
@@ -17,3 +20,6 @@ function getRandomInteger1(min,max){
     return Math.floor(Math.random()*((max-min)+1)) +min//(1:25:20)
 }
 console.log(getRandomInteger1(0,10))
+
+// const obj = require("../jsonObject.json")
+// console.log(obj)
