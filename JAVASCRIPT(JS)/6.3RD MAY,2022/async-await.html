@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- starts from (1:54:20) -->
+    <title>Async-Await</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        /*
+        async function myDisplay(){
+            let myPromise= new Promise((resolve,reject)=>{
+                setTimeout(()=>resolve("Hey There"),2000)
+            })
+            console.log("before")
+            const promiseVal= await myPromise // important part 
+            console.log("after")
+            document.getElementById("demo").innerHTML=promiseVal
+        }
+
+        myDisplay()
+        console.log("post display func")
+        */
+        
+        // at the time of reject(2:00:30)
+        async function myDisplay(){
+            let myPromise= new Promise((resolve,reject)=>{
+                setTimeout(()=>reject("Hey There"),2000)
+            })
+            console.log("before")
+           try {
+                const promiseVal= await myPromise
+                console.log("after")
+                document.getElementById("demo").innerHTML=promiseVal
+           } catch (err) {
+                console.log("in err")  
+           } 
+        }
+
+        myDisplay()
+        console.log("post display func")
+    </script>
+</body>
+</html>
