@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- starts from (48:00) -->
+    <title>Set Timeout and Set Interval </title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        /*  
+        function myGreeting1(){
+            console.log("Hey,Good Morning")
+        }
+        setTimeout(myGreeting1,5000)
+        
+        function myGreeting(){
+            console.log("Hey,Good Evening")
+        }
+       // myGreeting()
+       const myTimeout=setTimeout(myGreeting,5000)//(50:00) for setTimeout
+       setTimeout(()=>{console.log("This will run after 3 seconds")},3000)
+       console.log("Immidiate")
+
+       function myStopFunction(){
+           clearTimeout(myTimeout)//(54:30)
+       }
+       myStopFunction()// it's used for erase the setTimeout one
+        */ 
+       // THIS WHOLE COMMENT HAS BEEN DONE FOR THE EASE OF EXECUTION WHICH IS BELOW OF THESE
+       
+      /* let i=0; //(58:00)
+       function counter(){
+           i++
+           console.log(i)
+           setTimeout(counter,1000)
+       }
+       counter()// in here the 1st I mean '1' will come immidiately then it will show 1 minute delay for each and every incremented number 
+       */
+
+      /*let i=0; //(58:00)
+       function counter(){
+           i++
+           console.log(i)
+           setTimeout(counter,1000)
+       }
+       setTimeout(counter,1000)// it has been set by that it can give 1 min delay for each and every number
+       */
+
+        // (1:07:00)
+       /* let i=0;
+        function counter(){
+            i++
+            console.log(i)
+            const myTimeout=setTimeout(counter,1000)
+            if(i===5){
+                clearTimeout(myTimeout)//CLEARTIMEOUT//
+            }
+        }
+        setTimeout(counter,1000)
+        */
+
+       /* function displayHello(){
+            document.getElementById("demo").innerHTML+=" Hello"
+        }
+        setInterval(displayHello,2000)//(1:08:10) SETINTERVAL
+        */
+        const stopInterval=setInterval(displayHello,2000)
+        function displayHello(){
+            document.getElementById("demo").innerHTML+=" Hello"
+            clearInterval(stopInterval)// CLEARINTERVAL (1:10:30)
+        }
+
+        // (1:13:00)
+        /*
+        let j=0;
+        function counter2(){
+            j++
+            console.log(j)
+        }
+        setInterval(counter2,1000)
+        */
+
+
+        let k=0;//(1:13:50)
+        function counter3(){
+            k++
+            console.log(k)
+            setTimeout(counter3,(1000*(k+1)))
+        }
+        setTimeout(counter3,1000)
+    </script>
+</body>
+</html>
