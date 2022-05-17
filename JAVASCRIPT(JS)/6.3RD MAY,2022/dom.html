@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- starts from (2:05:20) -->
+    <title>DOCUMENT OBJECT MODEL</title>
+</head>
+<body>
+    <a href="http://google.com" id="anchor">My Link</a>
+    <h1 id="heading">My Heading</h1>
+    <p id="intro" class="intro">1</p>
+    <p class="intro">2</p>
+    <p class="intro">3</p>
+    <script>
+        // document.getElementById(id)
+        // document.getElementsByClassName(classname) // multiple elements
+        // document.getElementsByTagName(name) // para, div=>p,div,a
+
+        // element.innerHTML = brand new html content
+        // element.attribute = brand new value
+        // element.style.property = new style
+        // element.setAttribute(attribute,value)
+        document.getElementById("anchor").setAttribute("target","_blank")
+        document.getElementById("anchor").setAttribute("href","http://acciojob.com")
+        console.log(document.getElementById("anchor").href)
+        document.getElementById("heading").style.color="#0000ff"
+        // document.getElementById("heading").style.background="#00ffff"
+
+        const element=document.createElement("p")
+        element.innerHTML="Hey There"
+        document.getElementById("heading").appendChild(element)
+        // createElement creating element or tags and appendChild is applying it on browser
+
+        element.innerHTML="Normal div"//it allows the latest document
+        // document.appendChild(element)
+        document.body.appendChild(element)//(2:28:00)
+         
+        /*
+        document.createElement(element)
+        document.appendChild(element)
+        document.removeChild(element)
+        */
+
+        const paraElements=document.getElementsByTagName("p")
+        const paraWithIntroClass=document.querySelectorAll("p.intro")//all matching element
+        //console.log(paraWithIntroClass)//(2:31:26)
+        const paraWithIntroID=document.querySelector("p#intro")
+        console.log(paraWithIntroID)//(2:32:15) first one
+        const paraWithIntroFirstClass=document.querySelector("p.intro")
+        // console.log(paraWithIntroFirstClass)//(2:32:40) first one
+    </script>
+</body>
+</html>
