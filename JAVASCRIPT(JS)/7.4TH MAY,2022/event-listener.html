@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- starts from (11:30) -->
+    <title>Events & Event Listener</title>
+</head>
+<body>
+    <p id="demo">Empty Para</p>
+    <button id="showData">Show Data</p>
+    <button id="showUpdating">Stop Updating data</p>
+    <script>
+        const btn=document.getElementById("showData")
+        const myCustomFunc=()=>{
+            document.getElementById("demo").innerHTML=`current Date and Time is ${new Date()}`
+        }
+        btn.addEventListener("click",myCustomFunc)
+
+        // altrnative by setInterval
+        // setInterval(myCustomFunc,1000)
+
+        // Remove the event listener (19:25)
+        const stopBtn=document.getElementById("stopUpdating")
+        stopBtn.addEventListener("click",()=>{
+            btn.removeEventListener("click",myCustomFunc)
+        })
+    </script>
+</body>
+</html>

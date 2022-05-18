@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Starts from (23:25) -->
+    <title>Form Validation</title>
+</head>
+<body>
+    <form name="myForm">
+        Name: <input type="text" name="fname">
+        <input type="button" value="Submit" onclick="validateForm()">
+    </form>
+
+    <script>
+        function validateForm(){
+            console.log("calling")
+            let form=document.forms["myForm"]
+            console.log(form)//syntax of the form
+            let fnameInput=form["fname"]
+            console.log(fnameInput)//syntax of the fname 
+            let fnameValue=fnameInput.value
+            console.log(fnameValue) // value of the given input inside the box
+
+            if(fnameValue==""){
+                alert("Please fill your name")
+            }
+        }
+    </script>
+</body>
+</html>
