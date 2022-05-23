@@ -10,6 +10,9 @@
         <input type="button" value="Submit" onclick="validateForm()">
     </form>
 
+    <input type="email" name="email" id="email">
+    <input type="button" value="Save Email" id="emailBtn">
+
     <script>
         function validateForm(){
             console.log("calling")
@@ -24,6 +27,10 @@
                 alert("Please fill your name")
             }
         }
+
+        document.getElementById("emailBtn").addEventListener("click",()=>{
+            console.log(document.getElementById("email").value )
+        })
     </script>
 </body>
 </html>
