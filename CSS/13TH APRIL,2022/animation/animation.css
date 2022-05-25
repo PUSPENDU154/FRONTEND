@@ -2,7 +2,7 @@ div{
     width: 100px;
     height: 100px;
     background-color: red;
-    animation-name: examples;/*random names can be taken because it is an IDENTIFIER (like hare has been taken as "examples")*/
+    animation-name: examples;/*random names can be taken because it is an IDENTIFIER (like here has been taken as "examples")*/
     animation-duration: 5s;
     position: relative;
     animation-delay:2s;/*(1:56:15) take 2 seconds delay while starting*/
