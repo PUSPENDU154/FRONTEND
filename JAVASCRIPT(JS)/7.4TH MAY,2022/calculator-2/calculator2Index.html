@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- starts from (1:37:40) -->
+    <title>Project on Calculator2 </title>
+    <link rel="stylesheet" href="calculator2Style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="display"></div>
+        <!-- argument only on common characters -->
+        <div class="button">
+            <div class="btn" onclick="clearExp()">C</div>
+        <div class="btn" onclick="appendChar('/')">/</div>
+        <div class="btn" onclick="appendChar('*')">*</div>
+        <div class="btn" onclick="backButton()">&larr;</div>
+
+        <div class="btn" onclick="appendChar('7')">7</div>
+        <div class="btn" onclick="appendChar('8')">8</div>
+        <div class="btn" onclick="appendChar('9')">9</div>
+        <div class="btn" onclick="appendChar('-')">-</div>
+
+        <div class="btn" onclick="appendChar('4')">4</div>
+        <div class="btn" onclick="appendChar('5')">5</div>
+        <div class="btn" onclick="appendChar('6')">6</div>
+        <div class="btn" onclick="appendChar('+')">+</div>
+
+        <div class="btn" onclick="appendChar('1')">1</div>
+        <div class="btn" onclick="appendChar('2')">2</div>
+        <div class="btn" onclick="appendChar('3')">3</div>
+        <div class="btn" onclick="appendChar('.')">.</div>
+
+        <div class="btn" onclick="appendChar('(')">(</div>
+        <div class="btn" onclick="appendChar('0')">0</div>
+        <div class="btn" onclick="appendChar(')')">)</div>
+        <div class="btn" id="equal"  onclick="evalExpInEqual()">=</div>
+        </div>
+
+    </div>
+    <script src="calculator2Script.js"></script>
+</body>
+</html>
