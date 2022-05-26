@@ -11,7 +11,8 @@ function backButton(){
 function evalExpInEqual(){
     try{
         const lastChar=displayed.innerText.slice(-1)
-        if(isOpeartor(lastChar)){
+        const firstChar=displayed.innerText.slice(0,1)
+        if(isOpeartor(lastChar) || isMulorDiv(firstChar)){
             alert("cannot evaluate an expressiion using an operator")//(1:51:30)
         }else
         displayed.innerText=eval(displayed.innerText)
