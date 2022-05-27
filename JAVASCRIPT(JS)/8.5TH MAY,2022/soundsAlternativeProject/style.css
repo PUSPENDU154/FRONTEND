@@ -1,5 +1,3 @@
-/* starts from (15:00) */
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:wght@200;400&display=swap");
 
 *{
@@ -7,20 +5,20 @@
 }
 
 body{
-    background-color: rgb(161, 100, 223);
-    font-family: 'poppins',sans-serif;
+    background-color: rgb(161,100,223);
+    font-family: 'Poppins',sans-serif;
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
     align-items: center;
     justify-content: center;
-    text-align:center;
+    text-align: center;
+    height: 100vh;
     overflow: hidden;
     margin: 0;
 }
 
 .btn,.stop{
-    background-color:rebeccapurple;
+    background-color: rebeccapurple;
     color: white;
     border: none;
     margin: 1rem;
@@ -37,4 +35,7 @@ body{
 .btn:focus,.stop:focus{
     outline: none;
 }
- 
+
+.stop{
+    background-color: red;
+}
