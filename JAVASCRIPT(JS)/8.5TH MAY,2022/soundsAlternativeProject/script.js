@@ -32,6 +32,6 @@ const buttonContainer=document.getElementById("buttons")
 buttonContainer.append(btn)
 
 btn.addEventListener("click",stopAllSounds)
-    
+
 
 
