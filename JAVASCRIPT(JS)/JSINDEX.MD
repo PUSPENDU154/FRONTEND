@@ -37,4 +37,41 @@
 - Datatypes(1:34:30)
  - Array(1:35:40)
  - object(1:36:50)
-s
+- Undefined(1:42:40)
+- undefined vs null(1:47:20)
+- Function (1:51:00)
+- This(2:10:05)
+
+## 28th April:
+- JS EVENTS(27:45)
+- events(30:40)
+- string(37:35)
+
+## 29th April:
+- Array(18:15)
+- For Loops(27:00)
+- Splicing and Slicing(1:31:20)
+- SORTING (1:43:25)
+- Map and Filter(2:03:30 and 2:05:40)
+
+## 2nd May:
+- Array Contniuation of 29th April(by REDUCE method in 37:35)(1:37:40)
+- date(1:01:00)
+- arrow Function (1:27:40)
+- call-bind-apply(1:47:05)
+
+## 3rd May:
+- setTimeout-setInterval(48:00)
+- promises(1:21:30)
+- JS async-await(1:54:20)
+- dom(2:05:20)
+
+## 4th May:
+- event-listener(11:30)
+- forms in JS (23:25)
+- Project-Panel1(41:30)
+- Project on Calculator(1:14:20)
+- Project on Calculator another Approach(1:37:40)
+
+## 5th May:
+
