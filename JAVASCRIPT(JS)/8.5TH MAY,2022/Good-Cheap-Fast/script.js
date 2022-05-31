@@ -10,14 +10,14 @@ toggles.forEach((toggle)=>{
     toggle.addEventListener("change",(event)=>{
         console.log(event)
 
-        if(good.checked && cheap.checked && fast.checked){
-            if(good==event.target){
+        if((good.checked && cheap.checked)||(cheap.checked && fast.checked)||(good.checked && fast.checked)){
+            if(good===event.target){
                 fast.checked=false
             }
-            else if(cheap==event.target){
+            else if(cheap===event.target){
                 good.checked=false
             }
-            else if(fast==event.target){
+            else if(fast===event.target){
                 cheap.checked=false
             }
         }
