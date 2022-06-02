@@ -1,5 +1,11 @@
-// const obj=require("./jsonObject.json")
-// console.log(obj)
+ async function jsonFetch(){
+    const obj=await fetch("./jsonObject.json")
+    const data=await obj.json()
+    // console.log(obj)
+    console.log(data)
+ }
+ jsonFetch()
+ 
 
 console.log(Math.random())
 // returns a value no between {0,1}
