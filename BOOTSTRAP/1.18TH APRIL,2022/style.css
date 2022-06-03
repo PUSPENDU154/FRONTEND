@@ -1,0 +1,8 @@
+.bg-background{
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
+
+.bg-background>div{
+    /* border: 1px solid gray; */
+}
