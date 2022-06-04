@@ -81,7 +81,7 @@
 
 .container-12{
     height: 200px;
-    align-items:flex-start;/*flex-start; flex-end; stretch(default); baseline;*/
+    align-items:flex-start;/*flex-start; flex-end; stretch(default); baseline; center;*/
     /* justify-content: center; */
     /* 12th april (53:20) */
 }
