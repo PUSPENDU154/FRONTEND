@@ -20,3 +20,9 @@
 - https://www.youtube.com/watch?v=xBSlwwitD5U&list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n&index=22  (APNA COLLEGE)
 - https://www.youtube.com/watch?v=8imJZHgf44E&list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n&index=23  (APNA COLLEGE CHALLENGE)
 - https://www.youtube.com/watch?v=KhPJ5xF4gIk&list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n&index=24  (APNA COLLEGE CHALLENGE)
+
+## JUSTIFY-CONTENT/SELF/ITEMS AND ALIGN-CONTENT/ITEMS/SELF:
+- https://www.youtube.com/watch?v=TLHOTF6yJQQ
+
+## BACKGROUND-SIZE PROPERTY:
+- https://www.youtube.com/watch?v=4Bf-ekcmpA4
