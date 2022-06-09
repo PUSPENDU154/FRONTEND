@@ -4,29 +4,30 @@ function buttonClick(btn){
     //console.log(btn.innerText)//.innerText used to show all inputs inside that perticular class or id or anything (1:24:50)
     btn.addEventListener("click",()=>{
         //console.log(btn.innerText)// it will printed on console which will be clicked
-        switch(btn.innerText){
+        // switch(btn.innerText){
             // const displayed=document.getElementById("display") // just for showpiece for understanding
-            case 'C':{
+            if(btn.innerText=='C'){
                 displayed.innerText=""
-                break
+                // break
             }
 
-            case '←':{
+            else if(btn.innerText=='←'){
                 displayed.innerText=displayed.innerText.slice(0,-1)
-                break;
+                // break;
             }
 
-            case '=':{
+            else if(btn.innerText=='='){
                 try {
                     displayed.innerText=eval(displayed.innerText)// eval() used for doing arithmetic and logical operations (1:29:15)
                 } catch (error) {
                     displayed.innerText="Error"
                 }
-                break;
+                // break;
             }
-            default:
+            else{
                 displayed.innerText=displayed.innerText+btn.innerText
-        }
+            }
+        // }
     })
 }
 
