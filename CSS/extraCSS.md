@@ -26,3 +26,6 @@
 
 ## BACKGROUND-SIZE PROPERTY:
 - https://www.youtube.com/watch?v=4Bf-ekcmpA4
+
+## FLOAT AND CLEAR:
+- https://youtu.be/6G42rXal5-g
