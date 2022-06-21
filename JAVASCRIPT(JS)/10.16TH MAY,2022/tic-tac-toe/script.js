@@ -54,7 +54,7 @@ function initializeGame(){
                     updateActivePlayer()
                     showMessage(`${activePlayer===0 ? Player1: Player2},you're up`)
                 }else if(chances==9 && !winner){
-                    showMessage("Match Drawn")
+                    showMessage("Match Drawn!")
                 }else{
                     showMessage(`${activePlayer===0 ? Player1: Player2},congrats you won!`)
                 }
