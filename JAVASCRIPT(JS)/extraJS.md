@@ -15,3 +15,8 @@
 
 ## DATA PROPERTY (event.data) IN JAVASCRIPT:
 - https://youtu.be/YMtCERAmvM4
+- https://www.w3schools.com/jsref/event_inputevent_data.asp
+
+## VALUE PEOPERTY (event.value) IN JAVASCRIPT:
+- https://www.youtube.com/watch?v=WffCOh3GlWA
+- https://www.youtube.com/watch?v=WffCOh3GlWA
