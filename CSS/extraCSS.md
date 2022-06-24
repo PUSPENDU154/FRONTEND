@@ -29,3 +29,7 @@
 
 ## FLOAT AND CLEAR:
 - https://youtu.be/6G42rXal5-g
+
+## HOW TO LINK AN ICON IN THE TITLE IN FRONTEND:
+- https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/
+
