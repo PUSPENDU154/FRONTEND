@@ -33,3 +33,10 @@
 ## HOW TO LINK AN ICON IN THE TITLE IN FRONTEND:
 - https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/
 
+## TRANSFORM IN CSS:
+- https://www.w3schools.com/cssref/css3_pr_transform.asp
+- https://www.youtube.com/watch?v=K0Gz7CKNJzY (CODEWITHHARRY)
+- https://www.youtube.com/watch?v=e8-KK2kRonY
+- https://www.youtube.com/watch?v=B6G5BRVt2n8
+- https://www.youtube.com/watch?v=4CcL8rsrDd8
+
