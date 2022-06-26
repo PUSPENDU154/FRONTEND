@@ -1,0 +1,21 @@
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    text-align: center;
+    line-height: 300px;
+    /* transition: all 1s ease-in ; */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1.5s;
+}
+
+.container:hover{
+    height: 400px;
+    color: white;
+    background: black;
+    /* width: 500px;
+    font-size: 20px;*/
+    line-height:400px ;
+}
