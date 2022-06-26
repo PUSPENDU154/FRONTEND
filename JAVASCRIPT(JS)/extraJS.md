@@ -20,3 +20,12 @@
 ## VALUE PEOPERTY (event.value) IN JAVASCRIPT:
 - https://www.youtube.com/watch?v=WffCOh3GlWA
 - https://www.youtube.com/watch?v=WffCOh3GlWA
+
+## MAP IN ARRAY IN JAVASCRIPT:
+- https://www.w3schools.com/jsref/jsref_map.asp
+
+## FILL IN ARRAY:
+- https://www.w3schools.com/jsref/jsref_fill.asp
+
+## FILTER IN ARRAY IN JAVASCRIPT:
+- https://www.w3schools.com/jsref/jsref_filter.asp

@@ -51,7 +51,7 @@
         }
         for(let x in person){
             console.log(x)// output will be only keys
-            console.log(x,person[x])// output: (key,value)
+            console.log(x+":"+person[x])// output: (key,value)
         }
 
         // FOR-EACH LOOP (33:00)
@@ -60,8 +60,8 @@
         number.forEach(myfunc)
 
         function myfunc(value,index,array){
-            txt+=value+" "+index+","
-            Txt+=array+" "   
+            txt+=value+" index no:"+index+","
+            Txt+=array+" & "   
         }
         console.log(txt)
         console.log(Txt)
@@ -95,6 +95,7 @@
         console.log(List.toString())
         console.log(List.join("@"))//(1:23:10)
         console.log(List.pop())//(1:23:40) last element of an array i.e. Watermelon
+        console.log(List)
         // console.log(List.fill("myself"))// fill all the elements as "myself"
         console.log(List.shift())//(1:24:50) delete the first element
         console.log(List)
@@ -181,14 +182,14 @@
             }
         ]
         
-        // const varArr=arrayOfObject.sort(objFunc)
-        // function objFunc(a,b){
-        //     return a.year-b.year
-        // }
-        // console.log(varArr)
+        const varArr=arrayOfObject.sort(objFunc)
+        function objFunc(a,b){
+            return a.year-b.year
+        }
+        console.log(varArr)
         
         console.log(arrayOfObject.sort(function(a,b){
-            return a.year-b.year
+            return a.type-b.type
         }))
         
         console.log("map() method in array:")
@@ -197,7 +198,7 @@
         console.log(arrMapPrev)
         console.log(arrMapPrev.map(mapFunc))
         function mapFunc(value,index,array){
-            // return value>19 returns boolean value
+            // return value>19 //returns boolean value
             return value*2
         }
         
