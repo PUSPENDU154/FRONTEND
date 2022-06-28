@@ -40,3 +40,6 @@
 - https://www.youtube.com/watch?v=B6G5BRVt2n8
 - https://www.youtube.com/watch?v=4CcL8rsrDd8
 
+## PSEUDO-CLASSES IN CSS:
+- https://www.youtube.com/watch?v=RqTXyLThQsw&t=158s
+

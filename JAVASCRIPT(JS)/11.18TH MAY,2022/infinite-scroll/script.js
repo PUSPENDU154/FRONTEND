@@ -10,6 +10,23 @@ let ready=false
 
 // const url=`https://api.unsplash.com/photos/random/?client_id=${APIkey}&count=${count}&query=${query}&orientation=squarish;`
 
+function customSetAttribute(element,attributes){
+  
+}
+function displayPhotos(){
+  imagesLoaded=0
+  totalImages=photosArray.length
+
+  photosArray.forEach((photos)=>{
+    const item=document.createElement("a")
+    customSetAttribute(item,{
+      href:photos.urls.small
+      target:"_blank"
+    })
+
+  })
+}
+
 // async function 
 async function getPhotos(){
     const query="puppy"
@@ -20,6 +37,8 @@ async function getPhotos(){
     try {
         const response=await fetch(apiUrl)
         photosArray=await response.json()
+        
+        displayPhotos()
         console.log(photosArray)
     } catch (error) {
       console.log(error)  

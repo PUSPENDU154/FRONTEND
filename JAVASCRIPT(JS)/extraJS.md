@@ -29,3 +29,6 @@
 
 ## FILTER IN ARRAY IN JAVASCRIPT:
 - https://www.w3schools.com/jsref/jsref_filter.asp
+
+## SETATTRIBUTE() IN JAVASCRIPT:
+- https://www.w3schools.com/jsref/met_element_setattribute.asp
