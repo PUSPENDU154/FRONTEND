@@ -32,3 +32,6 @@
 
 ## SETATTRIBUTE() IN JAVASCRIPT:
 - https://www.w3schools.com/jsref/met_element_setattribute.asp
+
+## LOAD EVENTLISTENER OR ONLOAD EVENT:
+- https://www.w3schools.com/jsref/event_onload.asp
