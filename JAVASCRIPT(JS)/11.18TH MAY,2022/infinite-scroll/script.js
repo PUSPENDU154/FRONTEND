@@ -10,7 +10,7 @@ let totalImages=0
 let imagesLoaded=0
 let ready=false
 
-const imageContainer=document.getElementById("image-Container")
+const imageContainer=document.getElementById("image-container")
 const loader=document.getElementById("loader")
 
 
@@ -61,14 +61,14 @@ function displayPhotos(){
 async function getPhotos(){
     const query="puppy"
 
-    const count=10
-    const apiUrl=`https://api.unsplash.com/photos/random/?client_id=${APIkey}&count=${count}&query=${query}&orientation=squarish;`
+    const count=100
+    const apiUrl= `https://api.unsplash.com/photos/random/?client_id=${APIkey}&count=${count}&query=${query}&orientation=squarish;`
 
     try {
         const response=await fetch(apiUrl)
         photosArray=await response.json()
         
-        // displayPhotos()
+        displayPhotos()
         console.log(photosArray)
     } catch (error) {
       console.log(error)  
@@ -77,10 +77,10 @@ async function getPhotos(){
 
 getPhotos()
 
-// fro getting more photos
+// for getting more photos
 window.addEventListener("scroll",()=>{
   if(window.innerHeight+window.scrollY >= document.body.offsetHeight-1000 && ready){
     ready=false
-    displayPhotos()
+    getPhotos()
   }
 })

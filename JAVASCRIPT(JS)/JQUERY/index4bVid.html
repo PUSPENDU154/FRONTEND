@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second part of the 4th video of jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        body{
+            display:flex;
+            height: 100vh;
+            /* justify-content: center; */
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #test1{
+            background-color: aqua;
+            float: left;
+        }
+
+        #test2{
+            background-color: bisque;
+            float: right;
+        }
+        #test1,#test2{
+            height: 200px;
+            width: 300px;
+            border: none;
+            padding: 5px;
+            border: 10px red solid;
+            outline: 10px black solid;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test1">
+        <h1>First div</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maxime ipsa tenetur dolores reprehenderit modi necessitatibus tempore quaerat deserunt est!
+        </p>
+    </div>
+
+    <div id="test2">
+        <h1>Second Div</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugit obcaecati distinctio, tenetur repellat illo! Ratione facilis quo voluptatum perspiciatis et sint architecto rem est!
+        </p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            console.log("Hello")
+            let a=$("#test1").html()
+            console.log(a)
+        })
+    </script>
+</body>
+</html>

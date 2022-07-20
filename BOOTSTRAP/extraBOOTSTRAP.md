@@ -1,3 +1,9 @@
+## BOOTSTRAP FULL TUTORIAL:
+- https://www.w3schools.com/bootstrap/default.asp
+
+## BOOTSTRAP 5 TUTORIAL:
+- https://www.w3schools.com/bootstrap5/index.php
+
 ## BOOTSTRAP LINK:
 - https://getbootstrap.com/
 
@@ -14,3 +20,4 @@ Medium	                                 md	                              ≥768p
 Large	                                 lg	                              ≥992px
 Extra large	                             xl	                              ≥1200px
 Extra extra large	                     xxl	                          ≥1400px
+

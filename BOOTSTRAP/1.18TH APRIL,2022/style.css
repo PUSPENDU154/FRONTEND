@@ -1,8 +1,10 @@
 .bg-background{
     background-color: whitesmoke;
     border: 1px solid gray;
+    margin: 10px 0;
 }
 
 .bg-background>div{
     border: 1px solid gray;
+    text-align: center;
 }
